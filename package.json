@@ -1,0 +1,33 @@
+{
+  "name": "generator-vue",
+  "version": "0.0.1",
+  "description": "Vue projects generator",
+  "author": {
+    "name": "Noel De Martin",
+    "email": "noeldemartin@gmail.com",
+    "url": "https://noeldemartin.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.1"
+  },
+  "scripts": {},
+  "repository": "NoelDeMartin/generator-vue",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Noel De Martin",
+      "authorEmail": "noeldemartin@gmail.com",
+      "authorUrl": "https://noeldemartin.com"
+    }
+  }
+}

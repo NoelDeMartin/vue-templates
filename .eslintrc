@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "standard"
+    ],
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "space-before-function-paren": "off",
+        "semi": ["error", "always"],
+        "comma-dangle": ["error", "always-multiline"]
+    }
+}
