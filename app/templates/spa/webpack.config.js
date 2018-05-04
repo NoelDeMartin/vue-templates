@@ -9,7 +9,7 @@ module.exports = {
 
     entry: {
         app: [
-            './src/app.js',
+            './src/app.ts',
             './src/app.scss',
         ],
     },
@@ -26,6 +26,21 @@ module.exports = {
             {
                 test: /\.js$/,
                 use: ['babel-loader', 'eslint-loader'],
+                exclude: /node_modules/,
+            },
+
+            {
+                test: /\.ts$/,
+                use: [
+                    'babel-loader',
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            appendTsSuffixTo: [/\.vue$/],
+                        },
+                    },
+                    'tslint-loader',
+                ],
                 exclude: /node_modules/,
             },
 
@@ -74,7 +89,7 @@ module.exports = {
     ],
 
     resolve: {
-        extensions: ['*', '.js'],
+        extensions: ['*', '.js', '.ts'],
     },
 
 };
