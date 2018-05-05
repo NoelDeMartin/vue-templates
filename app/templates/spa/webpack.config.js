@@ -90,6 +90,9 @@ module.exports = {
 
     resolve: {
         extensions: ['*', '.js', '.ts'],
+        alias: {
+            '@': path.join(__dirname, 'src'),
+        },
     },
 
 };
